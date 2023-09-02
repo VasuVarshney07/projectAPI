@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Success/Failure Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .success,
+      .failure {
+        padding: 20px;
+      }
+      .success {
+        background-color: #dff0d8;
+        color: #3c763d;
+      }
+      .failure {
+        background-color: #f2dede;
+        color: #a94442;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    
+
+      <!-- Failure Page -->
+      <div class="failure">
+        <h1>Failure</h1>
+        <p>Something went wrong. Please try again.</p>
+      </div>
+      <form action="/failure" method="post">
+        <button>submit</button>
+    </form>
+    </div>
+  </body>
+</html>
